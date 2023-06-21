@@ -74,8 +74,8 @@ async function handleSubmit (e) {
   const messageDiv = document.getElementById(uniqueId);
   loader(messageDiv);
 
-  // fetch data from su servilleta 20/6/23 TG
-  const response = await fetch ('http://localhost:5000/', {
+  // fetch data from su servilleta 20/6/23 TG era http://localhost:5000, cambiado hoy 21/6/23
+  const response = await fetch ('https://codebrain.onrender.com/', {
     method: 'POST',
     headers: {
       'Content-Type':'application/json'
